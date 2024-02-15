@@ -1,0 +1,21 @@
+{
+  "name": "sd-0x-exercise-trybe-hotel-4",
+  "version": "1.0.0",
+  "description": "Boas-vindas ao repositório do projeto Trybe Hotel IV",
+  "main": "index.js",
+  "scripts": {
+    "migration": "node -e \"require('./__tests__/utils/executeQuery').runMigration();\"",
+    "test": "jest --runInBand --verbose --forceExit",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js, .jsx"
+  },
+  "keywords": [],
+  "author": "Trybe Desenvolvimento de Software LTDA",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "24.9.0",
+    "eslint-config-trybe-backend": "2.1.0"
+  },
+  "dependencies": {
+    "mysql2": "2.3.3"
+  }
+}
