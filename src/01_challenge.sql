@@ -4,8 +4,8 @@ CREATE TABLE room_users (
     user_id INT NOT NULL,
     check_in DATE NOT NULL,
     check_out DATE,
-    FOREIGN KEY (room_id) REFERENCES rooms(id),
-    FOREIGN KEY (user_id) REFERENCES users(id)
+    FOREIGN KEY (room_id) REFERENCES rooms(id), -- Chave estrangeira referenciando a coluna 'id' da tabela 'rooms'
+    FOREIGN KEY (user_id) REFERENCES users(id)  -- Chave estrangeira referenciando a coluna 'id' da tabela 'users'
 );
 
 INSERT INTO room_users (room_id, user_id, check_in, check_out) VALUES
